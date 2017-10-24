@@ -4,9 +4,9 @@ import UIKit
 
 //: Session 5-1 Function Types
 
-/*func addVAT(source:Double) -> Double {
+func addVAT(source:Double) -> Double {
     return source * 1.1
-}*/
+}
 
 func couponDiscount(source:Double) -> Double {
     return source * 0.9
@@ -27,7 +27,7 @@ func finalPrice(source:Double, additional:(Double) -> Double) -> Double {
     return price
 }
 
-let price3220 = finalPrice(350.0, additional: couponDiscount)
+let price3220 = finalPrice(source: 350.0, additional: couponDiscount)
 
 
 //: Session 5-2 Closure
